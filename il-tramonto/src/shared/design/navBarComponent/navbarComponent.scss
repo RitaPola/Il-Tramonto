@@ -1,10 +1,7 @@
-.navbar{
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-}
+@import './_variableNavbarComponent.scss';
+  a{
+    font-family: $fontNavbar, sans-serif;
+    text-decoration: none;
+    color: $colorFontNavBar;
+
+  }
