@@ -1,7 +1,15 @@
 @import './_variableNavbarComponent.scss';
   a{
-    font-family: $fontNavbar, sans-serif;
+    font-family: $fontLogo, sans-serif;
     text-decoration: none;
     color: $colorFontNavBar;
-
+    img{
+      max-width: $imgWidth;
+    
+    }
+  }
+  .custom-typography{
+    font-family: $fontLogo, sans-serif;
+    color: $colorFontNavBar;
+    padding-left: 5px;
   }
