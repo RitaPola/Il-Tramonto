@@ -2,7 +2,6 @@
 
 
 .overlay{
-
    position: fixed;
     top: 0;
     left: 0;
@@ -19,6 +18,7 @@
       font-family:$fontfamilyoverlay;
       font-size: 5em;
       font-weight: bold;
+      color: #ffffff;
      }
 }
-.content{padding-top: 100vh; }
+.content{padding-top: 100vh;}

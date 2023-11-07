@@ -1,18 +1,12 @@
+
 @font-face {
     font-family: navBarFont;
-    src: url('../../assets/fonts/navbarFont/SecularOne-Regular.ttf');
-    src: url('../../assets/fonts/navbarFont/SecularOne-Regular.ttf');
-    src: url('../../assets/fonts/navbarFont/SecularOne-Regular.woff2');
-
-}
-@font-face {
-    font-family: logoFont;
     src: url('../../assets/fonts/navbarFont/PermanentMarker-Regular.ttf');
     src: url('../../assets/fonts/navbarFont/PermanentMarker-Regular.woff');
     src: url('../../assets/fonts/navbarFont/PermanentMarker-Regular.woff2');
 
 }
 $fontNavbar: navBarFont;
-$colorFontNavBar: 	#EA540A;
+$colorFontNavBar:#EA540A;
 $imgWidth: 100px;
-$fontLogo: logoFont;
+$fontLogo: navBarFont;

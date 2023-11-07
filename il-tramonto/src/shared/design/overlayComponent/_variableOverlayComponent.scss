@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@font-face {
+    font-family: overlayFont;
+    src: url('../../assets/fonts/navbarFont/PermanentMarker-Regular.ttf');
+    src: url('../../assets/fonts/navbarFont/PermanentMarker-Regular.woff');
+    src: url('../../assets/fonts/navbarFont/PermanentMarker-Regular.woff2');
+
+}
 
 $backgroundcoloroverlay: linear-gradient(to right,#EA540A, #F29D14);
-$fontfamilyoverlay: 'Poppins', sans-serif;
+$fontfamilyoverlay: overlayFont, sans-serif;
