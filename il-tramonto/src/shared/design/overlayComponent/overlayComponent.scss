@@ -1,6 +1,11 @@
 @import './variableOverlayComponent';
 
+body {
 
+   overflow-x: hidden;
+
+ }
+ 
 .overlay{
    position: fixed;
     top: 0;

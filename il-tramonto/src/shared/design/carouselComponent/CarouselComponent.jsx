@@ -21,17 +21,12 @@ const CarouselComponent = ({ icon, icon2 }) => {
     const prevImage = () => {
       setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
     };
-  
-    // Funzione per passare automaticamente all'immagine successiva
     const autoPlay = () => {
       nextImage();
     };
   
     useEffect(() => {
-      // Imposta un intervallo per chiamare autoPlay ogni 3 secondi (3000 millisecondi)
       const intervalId = setInterval(autoPlay, 5000);
-  
-      // Pulisce l'intervallo quando il componente viene smontato
       return () => {
         clearInterval(intervalId);
       };
@@ -41,8 +36,8 @@ const CarouselComponent = ({ icon, icon2 }) => {
     <div className="carousel">
     <img src={images[currentImage]} alt={`Image ${currentImage + 1}`} />
     <div className="button-container">
-        <button onClick={prevImage} className="prev-button"><i className={'fa fa-' + icon} style={{color: 'c8a2c8'}}/></button>
-        <button onClick={nextImage} className="next-button"><i className={'fa fa-' + icon2} style={{color: 'c8a2c8'}}/></button>
+        <button onClick={prevImage} className="prev-button"><i className={'fa fa-' + icon} /></button>
+        <button onClick={nextImage} className="next-button"><i className={'fa fa-' + icon2}/></button>
     </div>
 </div>
 

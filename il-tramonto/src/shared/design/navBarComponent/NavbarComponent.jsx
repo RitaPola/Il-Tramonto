@@ -2,7 +2,7 @@ import React from "react"
 import '../navBarComponent/navbarComponent.scss'
 import {AppBar,Typography, Toolbar, Stack } from '@mui/material'
 
-const NavbarComponent = ({img,text0, text1, text2, text3 }) => {
+const NavbarComponent = ({img,text0, text1, text2, text3, text4 }) => {
   return (
    <AppBar position="static" color="default">
     <Toolbar >
@@ -13,6 +13,8 @@ const NavbarComponent = ({img,text0, text1, text2, text3 }) => {
      <a href="#">{text1}</a>
      <a href="#">{text2}</a>
      <a href="#">{text3}</a>
+     <a href="#">{text4}</a>
+
      </Stack>
     </Toolbar>
    </AppBar>
