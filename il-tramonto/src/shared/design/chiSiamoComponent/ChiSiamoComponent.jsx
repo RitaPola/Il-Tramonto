@@ -1,5 +1,6 @@
 import React from "react";
 import {Container, Typography} from '@mui/material'
+import {motion} from 'framer-motion';
 
 
 const ChiSiamoComponent = ({text,text1}) =>{

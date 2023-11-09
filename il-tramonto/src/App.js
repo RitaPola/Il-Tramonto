@@ -13,7 +13,7 @@ function App() {
   
   return (
     <>
-    <OverlayComponent texth1='IL TRAMONTO'/>
+    <OverlayComponent texth1='IL TRAMONTO' icon='plane'/>
     <NavbarComponent img={logo} text0={'IL TRAMONTO'} text1={'Home'} text2={"Chi Siamo"} text3={"La casa"} text4={"Contatti"}/>
     <CarouselComponent icon='arrow-left' icon2='arrow-right'/>
     <Grid container spacing={2}>

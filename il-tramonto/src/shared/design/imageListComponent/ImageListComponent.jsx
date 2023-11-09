@@ -9,6 +9,8 @@ import image5 from '../../assets/img/34.jpeg';
 import image6 from '../../assets/img/36.jpeg';
 import image7 from '../../assets/img/4.jpeg';
 import image8 from '../../assets/img/5.jpeg';
+import image9 from '../../assets/img/esterno1.jpeg';
+
 
 
 
@@ -24,9 +26,21 @@ function srcset(image, size, rows = 1, cols = 1) {
 export default function ImageListComponent() {
   return (
     <ImageList
-      sx={{ width: 790, height: 500, marginTop:10, marginLeft:5}}
+      sx={{ width: 790, height: 550, marginTop:10, marginLeft:5, border:4,borderColor:'#EA540A',  '&::-webkit-scrollbar': {
+        width: '10px',
+        height: '10px',
+      },
+      '&::-webkit-scrollbar-track': {
+        background: '#f1f1f1',
+      },
+      '&::-webkit-scrollbar-thumb': {
+        background: '#EA540A',
+        '&:hover': {
+          background: '#F29D14',
+        },
+      },}}
       variant="quilted"
-      cols={4}
+      cols={3}
       rowHeight={121}
     >
       {itemData.map((item) => (
@@ -59,8 +73,14 @@ const itemData = [
     cols: 2,
   },
   {
+    img: image9
+  },
+  {
     img: image5,
     cols: 2,
+  },
+  {
+    img: image8
   },
   {
     img: image6,
@@ -68,9 +88,9 @@ const itemData = [
     cols: 2,
   },
   {
-    img: image7,
+    img: image7
   },
   {
-    img: image8,
+    img: image7
   }
 ];

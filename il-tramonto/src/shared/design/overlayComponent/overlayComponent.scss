@@ -1,29 +1,38 @@
 @import './variableOverlayComponent';
 
 body {
-
    overflow-x: hidden;
-
- }
+}
  
 .overlay{
    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000; 
-    background:$backgroundcoloroverlay;
-    opacity: 0.95; 
-    cursor: pointer;
-     h1{
-      font-family:$fontfamilyoverlay;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 2000; 
+   background: $backgroundcoloroverlay;
+   opacity: 0.95; 
+   cursor: pointer;
+
+   h1 {
+      font-family: $fontfamilyoverlay;
       font-size: 5em;
       font-weight: bold;
       color: #ffffff;
-     }
+   }
 }
-.content{padding-top: 100vh;}
+
+.content {
+   padding-top: 100vh;
+}
+
+.ball {
+   position: fixed;
+   transform: translate(-50%, -50%);
+   pointer-events: none; 
+   z-index: 2001; 
+ }
