@@ -3,7 +3,7 @@ import {Container, Typography} from '@mui/material'
 import {motion} from 'framer-motion';
 
 
-const ChiSiamoComponent = ({text,text1}) =>{
+const Description = ({text,text1}) =>{
 return(
 <Container maxWidth="sm" className="principalContainer">
 <Typography variant="h2" component="h1" className="title">{text}</Typography>
@@ -12,4 +12,4 @@ return(
 )
 }
 
-export default ChiSiamoComponent;
+export default Description;
